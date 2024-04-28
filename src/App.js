@@ -27,7 +27,7 @@ function App() {
       <input
       id="search"
         type="text"
-        placeholder="Search by Description"
+        placeholder="Search your Recent Transactions"
         value={searchTerm}
         onChange={handleSearch}
       />
