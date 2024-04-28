@@ -15,4 +15,18 @@ const TransactionList = ({ transactions, searchTerm }) => {
           <th>Amount</th>
         </tr>
       </thead>
-      
+      <tbody>
+        {filteredTransactions.map((transaction, index) => (
+          <tr key={index}>
+            <td>{transaction.date}</td>
+            <td>{transaction.description}</td>
+            <td>{transaction.category}</td>
+            <td>{transaction.amount}</td>
+          </tr>
+        ))}
+      </tbody>
+    </table>
+  );
+};
+
+export default TransactionList;
